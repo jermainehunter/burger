@@ -13,3 +13,5 @@ CREATE TABLE burgers
 );
 
 SELECT * FROM burgers;
+
+DELETE FROM burgers WHERE id = 6;

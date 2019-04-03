@@ -4,6 +4,7 @@ const orm = require("../config/orm.js");
 const burger = {
     all: function (cb) {
         orm.all("burgers", (res) => {
+            console.log(typeof cb)
             cb(res);
         });
     },
@@ -20,7 +21,7 @@ const burger = {
     },
 
 };
-cat.all("id", 1, (data) => {
+burger.all("id", 1, (data) => {
   console.log(data);
 });
 
