@@ -21,9 +21,9 @@ const burger = {
     },
 
 };
-burger.all("id", 1, (data) => {
-  console.log(data);
-});
+// burger.all((data) => {
+//   console.log(data);
+// });
 
 // Export the database functions for the controller (catsController.js).
 module.exports = burger;
