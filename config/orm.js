@@ -90,7 +90,14 @@ const orm = {
             cb(result);
         });
     },
-
+    delete: function (id, cb) {
+        console.log(id);
+        connection.query(`DELETE FROM burgers WHERE id = ${id}`, function(error, result){
+            if (error) throw error;
+            cb(result);
+        })
+        
+    }
 
 };
 

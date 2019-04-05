@@ -4,7 +4,7 @@ const orm = require("../config/orm.js");
 const burger = {
     all: function (cb) {
         orm.all("burgers", (res) => {
-            console.log(typeof cb)
+            console.log(cb)
             cb(res);
         });
     },
@@ -20,10 +20,17 @@ const burger = {
         });
     },
 
+    delete: function (id, cb){
+        console.log(id);
+        orm.delete(id, function(data){
+            cb(data);
+        })
+    }
+
 };
-// burger.all((data) => {
-//   console.log(data);
-// });
+burger.all((data) => {
+  console.log(data);
+});
 
 // Export the database functions for the controller (catsController.js).
 module.exports = burger;

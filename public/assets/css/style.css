@@ -1,0 +1,28 @@
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #999999;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+  
+h1,
+h2,
+h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  color: #444;
+}
