@@ -1,9 +1,21 @@
 <div class="jumbotron">
   <h1>CREATE OR DEVOUR A BURGER!</h1>
 </div>
+{{!-- <img src="../public/images/header.png"> --}}
 
-<h2>Burgers that have yet to be devoured!</h2>
 
+<form class="create-form">
+  <div class="form-group">
+    <h2 class="alert alert-secondary" role="alert">Create a Burger!</h2>
+    <label class="burgername" for="ca">Burger Name:</label>
+    <input required type="text" id="burger-name" name="name">
+    <button class="btn btn-primary btn-lg"type="submit button">Add Burger</button>
+  </div>
+</form>
+
+<hr>
+<h2 class="alert alert-info" role="alert" >Burgers that have yet to be devoured!</h2>
+ 
 <ul>
   {{#each burgers}}
   {{#unless devoured}}
@@ -12,7 +24,7 @@
   {{/each}}
 </ul>
 <hr>
-<h2>Burgers that have been devoured!</h2>
+<h2 class="alert alert-danger" role="alert">Burgers that have been devoured!</h2>
 
 <ul>
   {{#each burgers}}
@@ -22,15 +34,3 @@
   {{/each}}
 </ul>
 <hr>
-<h2>Create a Burger!</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input required type="text" id="burger-name" name="name">
-  </div>
-
-
-
-  <button type="submit">Add Burger</button>
-</form>

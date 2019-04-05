@@ -3,10 +3,10 @@
 {{!-- this button will change state from undevoured to devoured --}}
 	
 		{{#if devoured}}
-				<button data-id="{{id}}" class="delete">Delete</button>
+				<button data-id="{{id}}" class="delete btn btn-danger">Delete</button>
 			{{else}}
-				<button class="change-burger" data-id="{{id}}" data-devouredburger="{{devoured}}">Devour</button>
-					<button data-id="{{id}}" class="delete">Delete</button>
+				<button type="button" class="change-burger btn btn-success" data-id="{{id}}" data-devouredburger="{{devoured}}">Devour</button>
+					<button class="delete btn btn-danger" data-id="{{id}}" type="button">Delete</button>
 		{{/if}}
 	
 
