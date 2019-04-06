@@ -13,7 +13,7 @@ const connection = mysql.createConnection({
   password: "password",
   database: "burgers_db"
 });
-}
+};
 
 // Make connection.
 connection.connect(err => {
